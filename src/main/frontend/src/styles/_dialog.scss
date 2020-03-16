@@ -1,0 +1,103 @@
+//modal
+.cdk-overlay-pane {
+  max-width: 98vw !important;
+  ///min-width: 35vw;
+}
+.mat-dialog-container {
+  color: black !important;
+    padding-bottom: 0px!important;
+}
+
+.mat-dialog-actions {
+  padding: 0px !important;
+  display: flex;
+  flex-wrap: wrap;
+  //min-height: 40px !important;
+  margin-bottom: 0px !important;
+  .button {
+    margin: 0px 8px 0px 8px;
+  }
+}
+.mat-dialog-title {
+  margin: 0px 0px 8px 0px !important
+}
+
+.mat-dialog-content.mat-dialog-content {
+  //display: block;
+  //margin: 0 -24px;
+  //padding: 0 24px;
+  max-height: 85vh !important;
+  //max-width: 900px;
+
+  .accordion {
+
+      mat-panel-title.mat-expansion-panel-header-title {
+        color: black;
+        font-weight: 400;
+        text-transform: initial;
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+}
+mat-dialog-container {
+  min-width: 600px;
+  max-width: 900px;
+}
+.dialog-sm {
+  mat-dialog-container{
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+}
+
+.cdk-global-scrollblock {
+   ///////////// display: none;
+  overflow-y: hidden;
+}
+  //position: fixed;
+  //width: 100%;
+/* overflow-y: scroll; */
+
+.maxw-800 {
+  max-width: 800px;
+}
+
+@media (min-width: 576px) {
+  .mat-dialog-title {
+    min-width: 600px
+  }
+
+}
+.mat-dialog-header, .mat-dialog-footer, .mat-dialog-content {
+  position: relative;
+}
+.mat-dialog-drag-handle {
+  position: absolute;
+  cursor: move;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  .handle-icon {
+    display: none;
+    //position: absolute;
+    //right: 0;
+    //top: 0;
+    //color: #999999;
+    //width: 100%;
+    //background: lightcoral;
+    //height: 100%;
+    //margin-top: -25px;
+  }
+}
+
+.mat-card {
+  padding: 4px 8px !important;
+  margin-bottom: 0 !important;
+}
+
+.headline {
+  font-weight: 500;
+}

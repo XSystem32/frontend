@@ -1,0 +1,13 @@
+[ {
+  "id" : 1,
+  "name" : "Privat"
+}, {
+  "id" : 2,
+  "name" : "Erhverv"
+}, {
+  "id" : 3,
+  "name" : "Offentlig"
+}, {
+  "id" : 4,
+  "name" : "Intern"
+} ]

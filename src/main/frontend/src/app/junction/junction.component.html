@@ -1,0 +1,99 @@
+<H1>Form</H1>
+
+<div class="container">
+
+  <fieldset class="form-group">
+    <label>Dit navn</label>
+    <input type="text" class="form-control" id="userCreated" required
+           [(ngModel)]="junctionToCreateOrEdit.userCreated" name="userCreated">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Oprettelses dato </label>
+    <input type="date" readonly
+           [ngModel]="junctionToCreateOrEdit.creationDate"
+           (ngModelChange)="junctionToCreateOrEdit.creationDate = $event"
+           class="form-control" name="context" required="required">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Host</label>
+    <select class="form-control" id="host"
+            required
+            [(ngModel)]="junctionToCreateOrEdit.host" name="host" #host="ngModel">
+      <option *ngFor="let hos of hosts | async" [value]="hos.name">{{hos.name}}</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Context</label>
+    <input type="text" class="form-control" id="context" ngModel pattern="^[/]?[a-zA-Z0-9]*" required
+           [(ngModel)]="junctionToCreateOrEdit.context" name="context" #context="ngModel">
+  </fieldset>
+  <div [hidden]="context.valid || context.pristine"
+       class="alert alert-danger">
+    Context should start with "/" and can only contain letters and numbers
+  </div>
+  <div *ngIf="context.invalid && (context.dirty || context.touched)" class="alert alert-danger">
+    <div *ngIf="context.errors.required">
+      This form cannot be empty
+    </div>
+  </div>
+
+  <fieldset class="form-group">
+    <label>Ordning</label>
+    <select class="form-control" id="ordning"
+            required
+            [(ngModel)]="junctionToCreateOrEdit.ordning" name="ordning" #ordning="ngModel">
+      <option *ngFor="let ord of ordnings | async" [value]="ord.name">{{ord.name}}</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Server</label>
+    <select class="form-control" id="server"
+            required
+            [(ngModel)]="junctionToCreateOrEdit.server" name="server" #server="ngModel">
+      <option *ngFor="let ser of servers | async" [value]="ser.name">{{ser.name}}</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Dato PILO</label>
+    <input type="date"
+           [ngModel]="junctionToCreateOrEdit.datoPilo"
+           (ngModelChange)="junctionToCreateOrEdit.datoPilo = $event"
+           class="form-control" name="context" required="required">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Dato PROD</label>
+    <input type="date"
+           [ngModel]="junctionToCreateOrEdit.datoProd"
+           (ngModelChange)="junctionToCreateOrEdit.datoProd = $event"
+           class="form-control" name="context" required="required">
+  </fieldset>
+
+  <button class="btn btn-success" (click)="saveForm()">Save</button>
+
+  <div>
+    <h3>Form will look like this: https://{{junctionToCreateOrEdit.host}}.com/{{junctionToCreateOrEdit.context}}</h3>
+  </div>
+
+  <div class="structure">
+    <h4>Adgangen vil se sådan ud: </h4>
+    <br>
+    <ul class="main">
+      <ul class="special">
+        <li>{{junctionToCreateOrEdit.context}} Adgang: {{junctionToCreateOrEdit.ordning}}
+          <ul>
+            <li>[/fri] Fri adgang</li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+    <br>
+    <h5>Hvis du har brug for anden adgang, kontakt Web Login</h5>
+  </div>
+
+</div>

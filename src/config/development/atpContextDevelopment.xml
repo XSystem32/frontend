@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<atpContext>
+		<interessentIdentifikation>2001-11-01-23.48.05.000089</interessentIdentifikation>
+		<name>Test Testesen</name>
+		<partner>0026602084</partner>
+		<contractAccount>000040001062</contractAccount>
+	</atpContext>
+</config>

@@ -1,0 +1,10 @@
+[{
+"intern.servers": [
+{"name": "liberty_krp"},
+{"name": "portal"}
+],
+"intern.ordnings": [
+{"acl": "atpmedarbejder"}
+]
+}
+]

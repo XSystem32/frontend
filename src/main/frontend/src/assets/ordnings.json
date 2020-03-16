@@ -1,0 +1,16 @@
+[ {
+  "id" : 1,
+  "name" : "AES"
+}, {
+  "id" : 2,
+  "name" : "ATP UDK"
+}, {
+  "id" : 3,
+  "name" : "Folkespension"
+}, {
+  "id" : 4,
+  "name" : "Feriepenge"
+}, {
+  "id" : 5,
+  "name" : "ATP Investering"
+} ]

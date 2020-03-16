@@ -1,0 +1,37 @@
+
+.mat-spinner-overlay {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(224 ,224,224,0.5);
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: $borger-prime-2;
+}
+
+.main-spinner-overlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  background-color: rgba(224 ,224,224,0.5);
+  .main-spinner {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+  }
+  .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #999999;
+    opacity: 0.6;
+  }
+}

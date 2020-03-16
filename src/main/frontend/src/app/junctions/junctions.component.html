@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<h1> List of forms </h1>
+<br>
+
+<div class="alert alert-success" *ngIf="message">{{message}}</div>
+
+<div class="container">
+
+  <div class="row">
+    <button (click)="addForm()" class="btn btn-success">Add</button>
+  </div>
+
+  <table border="2" id="junctions">
+    <thead>
+      <tr>
+        <th>Oprttelsesdato</th>
+        <th>Navn på skaberen</th>
+        <th>Host</th>
+        <th>Context</th>
+        <th>Ordning</th>
+        <th>Server</th>
+        <th>DatoPilo</th>
+        <th>DatoProd</th>
+        <th>Slet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let junction of junctions">
+        <td>{{junction.creationDate | date: 'dd/MM/yyyy'}}</td>
+        <td>{{junction.userCreated}}</td>
+        <td>http://www.{{junction.host}}</td>
+        <td>{{junction.context}}</td>
+        <td>{{junction.ordning}}</td>
+        <td>{{junction.server}}</td>
+        <td>{{junction.datoPilo | date: 'dd/MM/yyyy'}}</td>
+        <td>{{junction.datoProd | date: 'dd/MM/yyyy'}}</td>
+
+        <td><button (click)="deleteJunction(junction.id)" class="btn btn-warning"><i class="material-icons">
+          delete
+        </i></button> </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,9 @@
+{
+"offentlig.servers": [
+{"name": "liberty_frontend"},
+{"name": "liberty_login"}
+],
+"offentlig.ordnings": [
+{"acl": "atp_myndighed"}
+]
+}

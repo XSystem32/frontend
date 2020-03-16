@@ -1,0 +1,15 @@
+<div class="page-content">
+
+
+  <div class="container">
+    <button (click)="getWelcome()" class="btn btn-success"> Get Hello Test</button>
+  </div>
+
+  <div class="container" *ngIf="welcomeMessage">
+    <h2>Customized message</h2>
+    {{welcomeMessage}}
+  </div>
+<br>
+
+</div>
+

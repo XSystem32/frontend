@@ -1,0 +1,42 @@
+
+/*#junctions {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: 20px;
+}*/
+
+.row {
+  margin: inherit;
+  padding: 20px;
+}
+
+
+#junctions {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#junctions td, #junctions th {
+  border: 1px solid #000000;
+  padding: 12px;
+}
+
+#junctions tr:nth-child(even){background-color: #f2f2f2;}
+
+#junctions tr:hover {background-color: #ddd;}
+
+#junctions th {
+  font-size: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #284d62;
+  color: white;
+}
+
+

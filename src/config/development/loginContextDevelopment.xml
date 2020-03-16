@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <loginContext>
+        <userName>nftest</userName>
+      <enterpriseUserId>2009-01-13-15.41.16.532111</enterpriseUserId>
+        <!--<loginMethod>SPECIALIST</loginMethod>-->
+ <!--       <groups>TSS_EDITOR</groups>
+        <groups>TSS_READER</groups>
+        <groups>NAFS_PORTAL_IT_SYSTEMSPECIALIST</groups>
+        <groups>NAFS_JOURNALMEDARBEJDER</groups>
+        <groups>NAFS_ATP_KUNDERAADGIVER</groups>-->
+
+
+     <!--   <groups>NAFS_ATP_KUNDERAADGIVER</groups>
+        <groups>NAFS_SFS_KUNDERAADGIVER</groups>
+        <groups>NAFS_SUPP_KUNDERAADGIVER</groups>-->
+        <!--<groups>NAFS_AESK_KUNDERAADGIVER</groups>
+
+
+        <groups>NAFS_AEG_KUNDERAADGIVER</groups>
+        <groups>NAFS_AER_KUNDERAADGIVER</groups>
+        <groups>NAFS_AES_KUNDERAADGIVER</groups>
+        <groups>NAFS_AFU_KUNDERAADGIVER</groups>
+        <groups>NAFS_ATP_KUNDERAADGIVER</groups>
+        <groups>NAFS_BARSEL_KUNDERAADGIVER</groups>
+        <groups>NAFS_DAB_KUNDERAADGIVER</groups>
+        <groups>NAFS_DABARSEL_KUNDERAADGIVER</groups>
+        <groups>NAFS_DFO_KUNDERAADGIVER</groups>
+        <groups>NAFS_FK_KUNDERAADGIVER</groups>
+        <groups>NAFS_ISS_KUNDERAADGIVER</groups>
+        <groups>NAFS_JOURNALMEDARBEJDER</groups>
+        <groups>NAFS_LBO_KUNDERAADGIVER</groups>
+        <groups>NAFS_LG_KUNDERAADGIVER</groups>
+        <groups>NAFS_PDK_KUNDERAADGIVER</groups>
+        <groups>NAFS_PORTAL_IT_SYSTEMSPECIALIST</groups>
+        <groups>NAFS_SFS_KUNDERAADGIVER</groups>
+        <groups>NAFS_SUPP_KUNDERAADGIVER</groups>
+        <groups>WFM_MONITOR</groups>
+-->
+    </loginContext>
+</config>

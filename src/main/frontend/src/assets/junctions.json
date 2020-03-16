@@ -1,0 +1,74 @@
+[{
+  "privat": {
+    "privat.servers": [
+      {"name": "liberty_frontend"},
+      {"name": "liberty_login"}
+    ],
+    "privat.ordnings": [
+      {"acl": "aer_privat"},
+      {"acl": "aes_privat"},
+      {"acl": "atp_privat"},
+      {"acl": "aub_privat"},
+      {"acl": "bus_privat"},
+      {"acl": "fp_privat"},
+      {"acl": "iss_privat"},
+      {"acl": "lg_privat"},
+      {"acl": "sfs_privat"},
+      {"acl": "supp_privat"},
+      {"acl": "udk_privat"},
+      {"acl": "fri"}
+    ]
+  },
+
+  "erhverv": {
+    "erhverv.servers": [
+      {"name": "liberty_frontend"},
+      {"name": "liberty_login"},
+      {"name": "liberty_s3"}
+    ],
+    "erhverv.ordnings": [
+      {"acl": "aer_erhverv"},
+      {"acl": "aes_erhverv"},
+      {"acl": "any_erhverv"},
+      {"acl": "atp_erhverv"},
+      {"acl": "barseldk_erhverv"},
+      {"acl": "dfo_erhverv"},
+      {"acl": "easy_admin_erhverv"},
+      {"acl": "easy_anmelder_erhverv"},
+      {"acl": "easy_erhverv"},
+      {"acl": "easy_forsikring_erhverv"},
+      {"acl": "eps_anmelder_erhverv"},
+      {"acl": "ess_anmelder_erhverv"},
+      {"acl": "fib_erhverv"},
+      {"acl": "fk_erhverv"},
+      {"acl": "fp_erhverv"},
+      {"acl": "iss_erhverv"},
+      {"acl": "lba_erhverv"},
+      {"acl": "lfm_erhverv"},
+      {"acl": "lg_erhverv"},
+      {"acl": "sambet_erhverv"},
+      {"acl": "fri"}
+    ]
+  },
+
+  "offentlig": {
+    "offentlig.servers": [
+      {"name": "liberty_frontend"},
+      {"name": "liberty_login"}
+    ],
+    "offentlig.ordnings": [
+      {"acl": "atp_myndighed"}
+    ]
+  },
+
+  "intern": {
+    "intern.servers": [
+      {"name": "liberty_krp"},
+      {"name": "portal"}
+    ],
+    "intern.ordnings": [
+      {"acl": "atpmedarbejder"}
+    ]
+  }
+}
+]

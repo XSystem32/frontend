@@ -1,0 +1,16 @@
+[ {
+  "id" : 1,
+  "name" : "LDAP"
+}, {
+  "id" : 2,
+  "name" : "LDAP 2"
+}, {
+  "id" : 3,
+  "name" : "ISAM"
+}, {
+  "id" : 4,
+  "name" : "Liberty Server"
+}, {
+  "id" : 5,
+  "name" : "XFE"
+} ]

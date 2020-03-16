@@ -1,0 +1,32 @@
+[ {
+  "erhverv.servers": [
+  {"name": "liberty_frontend"},
+  {"name": "liberty_login"},
+  {"name": "liberty_s3"}
+  ],
+
+  "erhverv.ordnings": [
+  {"acl": "aer_erhverv"},
+  {"acl": "aes_erhverv"},
+  {"acl": "any_erhverv"},
+  {"acl": "atp_erhverv"},
+  {"acl": "barseldk_erhverv"},
+  {"acl": "dfo_erhverv"},
+  {"acl": "easy_admin_erhverv"},
+  {"acl": "easy_anmelder_erhverv"},
+  {"acl": "easy_erhverv"},
+  {"acl": "easy_forsikring_erhverv"},
+  {"acl": "eps_anmelder_erhverv"},
+  {"acl": "ess_anmelder_erhverv"},
+  {"acl": "fib_erhverv"},
+  {"acl": "fk_erhverv"},
+  {"acl": "fp_erhverv"},
+  {"acl": "iss_erhverv"},
+  {"acl": "lba_erhverv"},
+  {"acl": "lfm_erhverv"},
+  {"acl": "lg_erhverv"},
+  {"acl": "sambet_erhverv"},
+  {"acl": "fri"}
+]
+}
+]

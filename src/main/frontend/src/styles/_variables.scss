@@ -1,0 +1,101 @@
+$atp-prime-1: #ADC200 !default;
+$atp-prime-2: #7D9600 !default;
+//$atp-prime-3:     #4D5D1E !default;
+$atp-prime-3b: #374215 !default;
+$atp-prime-3: #5e7504 !default;
+$atp-prime-4: #E0E9A3 !default;
+$atp-prime-5: #FBFCF2 !default;
+$atp-prime-6: #4D4D4D !default;
+
+$atp-brand: $atp-prime-1;
+$atp: $atp-prime-2;
+$atp-dark: $atp-prime-3;
+$atp-darken: $atp-prime-3b;
+$atp-lighten: $atp-prime-4;
+$atp-super-light: $atp-prime-5;
+
+$lightgrey: #f2f2f2 !default;
+$greyborder: #dee2e6 !default;
+$grey: #e0e0e0 !default;
+$darkgrey: #555 !default;
+
+//$krp-prime-x:     #033D25 !default;
+//$krp-prime-y:     #617804 !default; //tekster
+//
+//$krp-prime-a:     #ADC200 !default;
+//$krp-prime-b:     #759205 !default;
+//$krp-prime-c:     #D1DB7A !default;
+//$krp-prime-d:     #606060 !default;
+//$krp-prime-e:     #413930 !default;
+//$krp-prime-f:     #333333 !default;
+//$krp-prime-g:     #E0E0E0 !default;
+//$krp-prime-h:     #EEEEEE !default;
+//$krp-prime-i:     #F7F7F7 !default;
+
+$white: #ffffff !default;
+$black: #000000 !default;
+
+$borger-prime-1: #44831e !default;
+$borger-prime-2: #284d62 !default;
+$borger-prime-3: #0b2432 !default;
+
+$borger-prime-4: #CC0000 !default;
+
+$borger-prime-5: #333333 !default;
+
+$borger-prime-a: #e0e0e0 !default;
+$borger-prime-b: #EEEEEE !default;
+$borger-prime-c: #f7f7f7 !default;
+$borger-prime-d: #BFBFBF !default;
+$borger-prime-d-rgba: rgba(191, 191, 191, 0) !default;
+$borger-prime-e: #f2f2f2 !default;
+
+// tilføjet farver
+//$borger-secondary-1: #F8FAFC !default;
+$borger-secondary-1: #f7f7f7 !default;
+
+//lighten($color,15%);
+//$dark: darken($color,15%);
+
+$color-to-primary-button: $borger-prime-1;
+$color-to-delete-button: $borger-prime-4;
+$color-to-primary-stroked-button: $borger-prime-1;
+$color-to-links: $borger-prime-1;
+$color-to-chip-active: $borger-prime-1;
+$color-to-chip-inactive: $borger-prime-a;
+
+$color-to-priority-1: $borger-prime-1;
+$color-to-priority-2: $borger-prime-1;
+$color-to-priority-3: $borger-prime-1;
+
+$color-to-navbar-background: $borger-prime-2;
+$color-to-navbar-links: $white;
+$color-to-body-background: $borger-prime-a;
+$color-to-view-component-border: $borger-prime-2;
+$color-to-accordion-border: $borger-prime-d;
+$color-to-view-component-header: $borger-prime-2;
+$color-to-view-component-header-hover: $borger-prime-2;
+$color-to-accordion-background: $greyborder;
+$color-to-accordion-background-hover: $borger-prime-c;
+
+$color-to-view-body-level-1: $borger-prime-b;
+$color-to-view-body-level-2: $white;
+
+$color-to-table-zebra: $borger-prime-e;
+
+$color-to-table-hover: $borger-secondary-1;
+$color-to-table-selected-row: $borger-secondary-1;
+
+$color-to-box-arrow-border: $borger-prime-d;
+$color-to-box-arrow-border-rgba: $borger-prime-d-rgba;
+
+
+
+/// spaces
+
+
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 12px;
+$space-lg: 16px;
+$space-xl: 24px;

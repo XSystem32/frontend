@@ -1,0 +1,50 @@
+[
+  {
+    "privat.servers": [
+      {
+        "name": "liberty_frontend"
+      },
+      {
+        "name": "liberty_login"
+      }
+    ],
+    "privat.ordnings": [
+      {
+        "acl": "aer_privat"
+      },
+      {
+        "acl": "aes_privat"
+      },
+      {
+        "acl": "atp_privat"
+      },
+      {
+        "acl": "aub_privat"
+      },
+      {
+        "acl": "bus_privat"
+      },
+      {
+        "acl": "fp_privat"
+      },
+      {
+        "acl": "iss_privat"
+      },
+      {
+        "acl": "lg_privat"
+      },
+      {
+        "acl": "sfs_privat"
+      },
+      {
+        "acl": "supp_privat"
+      },
+      {
+        "acl": "udk_privat"
+      },
+      {
+        "acl": "fri"
+      }
+    ]
+  }
+]

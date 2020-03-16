@@ -1,0 +1,16 @@
+<div class="container">
+
+  <fieldset class="form-group">
+    <label>Junction</label>
+    <select class="form-control"  id="junction"
+            required
+            [(ngModel)]="junctions" name="junction">
+      <option *ngFor="let jun of junctions | async" [value]="jun.privat">{{jun.privat}}</option>
+    </select>
+  </fieldset>
+
+    <div *ngIf="regTypeSelectedOption === 'privat'">
+
+    </div>
+
+</div>

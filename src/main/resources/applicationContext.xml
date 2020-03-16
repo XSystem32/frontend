@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:cache="http://www.springframework.org/schema/cache" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+  <context:annotation-config/>
+  <import resource="classpath*:XFEFmwkContext.xml"/>
+
+  <context:component-scan base-package="dk.atp.xfe,dk.atp.ife">
+    <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController"/>
+    <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+  </context:component-scan>
+
+  <bean id="UserLoginFilter" class="dk.atp.xfe.fmwk.filter.LoginContextProviderFilter">
+    <property name="loginContextBuilder" ref="loginContextBuilder"/>
+    <property name="useSessionValues" value="true"/>
+  </bean>
+
+  <bean id="loginContextBuilder" class="${loginContextClass}"/>
+
+  <util:map id="endpoints" value-type="dk.atp.xfe.fmwk.ws.jms.Endpoint">
+  </util:map>
+
+  <bean id="atpContext" class="dk.atp.portal.context.AtpContext">
+    <property name="initiatingComponent" value="WLSELFSERVICEWeb"/>
+  </bean>
+
+  <bean id="atpContextBuilder" class="${atpContextClass}">
+    <property name="atpContext" ref="atpContext"/>
+    <property name="schemeShortName" value="ATP"/>
+    <property name="endpoints" ref="endpoints"/>
+    <property name="httpGOrdningId" value="0001-01-01-01.01.01.000012"/>
+    <!--property name="tilKnytOrdningTilMasterdataVedStart" value="true"/-->
+  </bean>
+
+  <bean id="AtpContextFilter" class="dk.atp.xfe.fmwk.filter.AtpContextProviderFilter">
+    <property name="atpContextBuilder" ref="atpContextBuilder"/>
+  </bean>
+
+  <tx:annotation-driven/>
+
+</beans>

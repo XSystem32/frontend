@@ -1,0 +1,151 @@
+h5 {
+  a {
+    font-weight: 600;
+  }
+}
+
+///// small knapper i table og group - skal have samme style ////
+
+.button-small-style {
+  font-size: 13px;
+  min-width: 20px !important;
+  line-height: 22px !important;
+  padding: 0 8px !important;
+  svg {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    vertical-align: middle !important;
+  }
+}
+table {
+  th {
+    .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+      @extend .button-small-style;
+    }
+  }
+}
+
+.buttons-small-group {
+  .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    @extend .button-small-style;
+  }
+}
+
+
+.tab-btn {
+  right: 32px !important;
+  position: absolute !important;
+  z-index:2 !important;
+}
+
+.mat-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-stroked-button, .mat-button-wrapper>* {
+  vertical-align: initial !important;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button, .mat-stroked-delete-button {
+  border-radius: 2px !important;
+}
+.mat-stroked-button {
+  background: $white;
+  background-color: $white;
+}
+.mat-stroked-delete-button {
+  background: $white;
+  background-color: $white;
+}
+
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button, .mat-primary, .mat-stroked-delete-button  {
+}
+a {
+  color: $color-to-links ;
+  text-decoration: underline;
+}
+a:hover {
+  color: $color-to-links ;
+  //color: $atp-darken !important;
+  text-decoration: underline;
+}
+a:focus {
+  color: $color-to-links ;
+  //color: $atp-darken !important;
+  text-decoration: underline;
+}
+
+table.table a {
+  margin: 0;
+  color: $color-to-links !important;
+}
+
+.w-icon {
+  width: 45px;
+  i {
+    font-size: 14px !important;
+  }
+}
+
+.button-document {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button, .mat-stroked-delete-button {
+  padding: 0 12px;
+  font-weight: 400;
+  word-wrap:break-word;
+  white-space:normal !important;
+  text-align: left !important;
+
+}
+button.mat-button-padding-0 mat-button {
+  padding: 0 0px !important;
+}
+
+table {
+  .mat-button-padding-0 {
+    padding: 0 0px !important;
+  }
+}
+
+.mat-icon-button {
+  padding: 0;
+  min-width: 0;
+  width: 34px !important;
+  height: 25px !important;
+  flex-shrink: 0;
+  line-height: 25px !important;
+  border-radius: 50%;
+}
+
+.mat-icon-button {
+  color: #666;
+  &:hover, &:focus {
+    color: #000;
+  }
+}
+
+.mat-form-field-infix {
+  min-width: 60px !important;
+  width: auto !important;
+}
+
+.mat-stroked-button:not([disabled]) {
+  border-color: $color-to-primary-stroked-button;
+}
+
+.mat-stroked-delete-button:not([disabled]) {
+  border-color: $color-to-delete-button;
+}
+
+//det skal være muligt at kopiere teksten af en knap på indbakke
+.mat-button {
+  user-select: text!important;
+}
+
+//størrelse for frem og tilbage pilene på kalenderen
+.mat-calendar-next-button::after, .mat-calendar-previous-button::after {
+  width: 10px;
+  height: 10px;
+}

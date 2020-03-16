@@ -1,0 +1,21 @@
+<div class="accordion-view-component">
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header matRipple id="viewheader">
+        <mat-panel-title>
+          <div class="d-flex align-items-center">
+            <div [attr.id]="options.id">{{options.title}}</div><ng-content select="[custom-title-info]"></ng-content>
+          </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngIf="options.loading" class="d-flex justify-content-center mb-1 mt-2"><mat-spinner [diameter]="20" aria-label="Indlæser siden. Vent venligst."></mat-spinner></div>
+      <div [hidden]="options.loading">
+        <ng-content></ng-content>
+      </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>
+
+

@@ -1,0 +1,23 @@
+.tox-tinymce {
+  //min-height: 400px;
+}
+
+//nedenstående style skal fjernes når poul tinymce skal implementeres korrekt så krpWeb hoster den selv.
+//https://www.tiny.cloud/docs/integrations/angular2/#loadingtinymcebyyourself
+//.tox-menubar {
+//  display: none !important;
+//}
+//.tox-toolbar {
+//  border-top: 0 !important;
+//}
+//.tox-notification--in {
+//  display: none !important;
+//}
+//
+.tox-statusbar__branding {
+  display: none;
+}
+
+.editor-error {
+  border: 2px solid red;
+}
