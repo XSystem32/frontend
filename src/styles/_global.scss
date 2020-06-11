@@ -1,0 +1,260 @@
+html, body {
+  overflow-x: hidden;
+  background-color: $color-to-body-background;
+  //height: 100%;
+}
+
+body {
+  //color: #0d0d0d;
+  color: black;
+}
+
+table td {
+  font-weight: 400;
+  word-break:break-all;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.hide-base-svg {
+  display: none;
+}
+
+.icon-svg {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.icon-svg-large {
+  height: 3rem;
+  width: 3rem;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.icon-svg-medium {
+  height: 2rem;
+  width: 2rem;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+
+.grey-text {
+  color: #747474 !important;
+  fill: #747474;
+}
+.white-text {
+  color: #FFFFFF !important;
+  fill: #FFFFFF;
+}
+
+.light-text {
+  color: $lightgrey !important;
+}
+
+.lightgrey-text {
+  color: #BFBFBF !important;
+  fill: #BFBFBF;
+}
+
+.mat-card {
+  margin-bottom: 1rem;
+  border: 1px solid #d9d9d6;
+  .mat-card-header-bg {
+    background-color: $lightgrey;
+    //border-radius: 4px;
+  }
+}
+
+.mat-card:not([class*='mat-elevation-z']) {
+  box-shadow:none;
+}
+
+.mat-cell, .mat-footer-cell {
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+}
+
+.mat-header-cell, .mat-sort-header-container {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+th.mat-header-cell {
+  height: 30px;
+  //background: #fff; //$lightgrey;
+}
+
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+  font-size: 14px;
+}
+
+$mat-tooltip-font-size: 14px;
+
+.mat-tooltip {
+  font-size: $mat-tooltip-font-size;
+  font-weight: 400;
+}
+
+.mat-column-prioritet {
+  width: 3%;
+}
+.mat-column-indgaaetdato {
+  width: 6%;
+}
+.mat-column-udskudttil {
+  width: 6%;
+}
+.mat-column-ordning {
+  width: 6%;
+}
+.mat-column-sagstype {
+  width: 12%;
+}
+.mat-column-emne {
+  width: auto;
+}
+.mat-column-cprnr {
+  width: 8%;
+}
+.mat-column-senr {
+  width: 8%;
+}
+.mat-column-kanal {
+  width: 8%;
+}
+.mat-column-sektion {
+  width: 8%;
+}
+
+
+
+.w-select-type {
+  min-width: 220px;
+}
+.w-select {
+  min-width: 100px;
+  max-width: 160px;
+}
+.w-text {
+  min-width: 300px;
+}
+
+//td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+//  padding-left: 16px !important;
+//}
+//td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
+//  padding-right: 16px !important;
+//}
+
+tr.mat-header-row {
+  height: 25px !important;
+}
+.mat-header-cell, .mat-sort-header-container {
+  color: #454545;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+.mat-sort-header-arrow, [dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow {
+  margin: 0 0 0 2px !important;
+}
+
+.mat-tooltip-panel * {
+  font-size: 13px;
+}
+
+
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.mat-slide-toggle-bar, .mat-slide-toggle-thumb {
+  transition: all 100ms linear !important;
+}
+
+
+
+
+
+.mat-bottom-sheet-container {
+  padding: 24px 24px 24px 24px !important;
+}
+
+.page-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+.view-link {
+  .page-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0
+  }
+}
+
+//.standard {
+//  .page-content {
+//    padding-top: 1rem;
+//    padding-bottom: 1rem
+//  }
+//}
+  //generisk-dok {
+  //  .page-content {
+  //    padding-top: 1rem;
+  //    padding-bottom: 1rem
+  //  }
+  //}
+
+  viewordningsvaelger {
+    .page-content {
+      padding: 0;
+      //margin-top: -16px;
+    }
+  }
+
+  strong, b {
+    font-weight: 700 !important;
+  }
+
+  .fa-2x {
+    font-size: 1.7em;
+  }
+
+
+.mat-card {
+  border-radius: 0;
+}
+
+//skjule genveje
+u {
+  text-decoration: none;
+}

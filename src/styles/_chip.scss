@@ -1,0 +1,49 @@
+.view-link {
+    padding: 16px 0px 12px 0px;
+    background-color: white;
+    background: white;
+    width: 100%;
+}
+.mat-chip {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.mat-standard-chip {
+  background-color: $color-to-chip-inactive;
+  padding: 4px 2px 6px 8px !important;
+  min-height: 26px !important;
+  a {
+    white-space: nowrap !important;
+    max-width: 150px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: black;
+  }
+  i {
+    color: #747474;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: $color-to-chip-active;
+  a {
+    color: white;
+  }
+
+  i {
+    color: white;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.badge {
+  text-transform: initial;
+  font-size: 85%;
+}

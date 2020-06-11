@@ -1,0 +1,60 @@
+
+.dual-list {
+  .record-picker {
+    ul {
+      min-height: 300px !important;
+      max-height: 300px !important;
+    }
+  }
+
+  .filter[_ngcontent-c11]::after {
+    top: -43px;
+    left: calc(100% - 30px);
+  }
+  .point-left, .point-right {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .btn-primary {
+    background-color: $color-to-primary-button !important;
+    color: #fff !important;
+  }
+  .btn-default {
+    background-color: $color-gray-003 !important;
+    color: #fff !important;
+  }
+  div.record-picker::-webkit-scrollbar-thumb {
+    background: $color-to-navbar-background !important;
+    border: thin solid gray;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  div.record-picker {
+    scrollbar-base-color: $color-to-navbar-background !important;
+    scrollbar-3dlight-color: $color-to-navbar-background !important;
+    scrollbar-highlight-color: $color-to-navbar-background !important;
+    scrollbar-track-color: #eee;
+    scrollbar-arrow-color: gray;
+    scrollbar-shadow-color: gray;
+    scrollbar-dark-shadow-color: gray;
+  }
+
+
+  .btn {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.5rem;
+    font-size: 0.81rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0.375rem;
+    border: 0;
+    border-radius: 0.125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+  }
+}
+

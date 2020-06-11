@@ -1,0 +1,106 @@
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config(
+        //$font-family: '"Segoe UI", "Helvetica Neue", sans-serif',
+        $font-family: '"Helvetica Neue", sans-serif',
+        //$font-family: 'Verdana, "Helvetica Neue", sans-serif',
+        $headline: mat-typography-level(18px, 32px, 700),
+        $body-1: mat-typography-level(14px, 20px, 400)
+);
+
+$mat-teal: (
+        50:  $color-to-primary-button,
+        100: $color-to-primary-button,
+        200: $color-to-primary-button,
+        300: $color-to-primary-button,
+        400: $color-to-primary-button,
+        500: $color-to-primary-button,
+        600: $color-to-primary-button,
+        700: $color-to-primary-button,
+        800: $color-to-primary-button,
+        900: $color-to-primary-button,
+        A100: $color-to-primary-button,
+        A200: $color-to-primary-button,
+        A400: $color-to-primary-button,
+        A700: $color-to-primary-button,
+        contrast: (
+                50: $dark-primary-text,
+                100: $dark-primary-text,
+                200: $dark-primary-text,
+                300: $dark-primary-text,
+                400: $dark-primary-text,
+                500: $light-primary-text,
+                600: $light-primary-text,
+                700: $light-primary-text,
+                800: $light-primary-text,
+                900: $light-primary-text,
+                A100: $dark-primary-text,
+                A200: $dark-primary-text,
+                A400: $dark-primary-text,
+                A700: $dark-primary-text,
+        )
+);
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+
+// Define the theme.
+$krpweb-app-primary: mat-palette($mat-teal);
+$krpweb-app-accent:  mat-palette($mat-teal, A200, A100, A400);
+$krpweb-app-theme:   mat-light-theme($krpweb-app-primary, $krpweb-app-accent);
+
+// Include the theme styles for only specified components.
+@include mat-core-theme($krpweb-app-theme);
+@include mat-autocomplete-theme($krpweb-app-theme);
+@include mat-badge-theme($krpweb-app-theme);
+@include mat-bottom-sheet-theme($krpweb-app-theme);
+@include mat-button-theme($krpweb-app-theme);
+@include mat-button-toggle-theme($krpweb-app-theme);
+@include mat-card-theme($krpweb-app-theme);
+@include mat-checkbox-theme($krpweb-app-theme);
+@include mat-chips-theme($krpweb-app-theme);
+@include mat-table-theme($krpweb-app-theme);
+@include mat-datepicker-theme($krpweb-app-theme);
+@include mat-dialog-theme($krpweb-app-theme);
+@include mat-divider-theme($krpweb-app-theme);
+@include mat-expansion-panel-theme($krpweb-app-theme);
+@include mat-form-field-theme($krpweb-app-theme);
+@include mat-grid-list-theme($krpweb-app-theme);
+@include mat-icon-theme($krpweb-app-theme);
+@include mat-input-theme($krpweb-app-theme);
+@include mat-list-theme($krpweb-app-theme);
+@include mat-menu-theme($krpweb-app-theme);
+@include mat-paginator-theme($krpweb-app-theme);
+@include mat-progress-bar-theme($krpweb-app-theme);
+@include mat-progress-spinner-theme($krpweb-app-theme);
+@include mat-radio-theme($krpweb-app-theme);
+@include mat-select-theme($krpweb-app-theme);
+@include mat-sidenav-theme($krpweb-app-theme);
+@include mat-slide-toggle-theme($krpweb-app-theme);
+@include mat-slider-theme($krpweb-app-theme);
+@include mat-stepper-theme($krpweb-app-theme);
+@include mat-sort-theme($krpweb-app-theme);
+@include mat-tabs-theme($krpweb-app-theme);
+@include mat-toolbar-theme($krpweb-app-theme);
+@include mat-tooltip-theme($krpweb-app-theme);
+@include mat-tree-theme($krpweb-app-theme);
+@include mat-snack-bar-theme($krpweb-app-theme);
+
+//Focus
+$color-gray-003:              #747474 !default;
+$color-gray-medium-dark:      $color-gray-003 !default;
+$color-focus:                 $color-gray-medium-dark !default;
+$focus-outline:               2px solid $color-focus;
+$focus-spacing:               2px;
+
+a:focus, button:focus, .focus {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing;
+}
+button.mat-menu-item {
+  outline: none;
+}
+
+.mat-sort-header-button, .mat-paginator-icon, .mat-icon-button, button.mat-icon-button {
+  outline: none !important;
+}
+

@@ -1,0 +1,35 @@
+
+.pre {
+  white-space: pre;
+}
+.text-line-through{
+  text-decoration: line-through;
+}
+
+.ellipsis {
+  white-space: nowrap !important;
+  max-width: 400px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.bg-light {
+  background-color: $color-to-view-body-level-1 !important;
+  background: $color-to-view-body-level-1 !important;
+}
+
+.text-line {
+  display: block;
+}
+
+.fa-rotate-45 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  transform: rotate(45deg);
+}
+small {
+  font-size: 13px;
+  font-weight: 400;
+}
+.text-black-50 {
+  color: #757575;
+}

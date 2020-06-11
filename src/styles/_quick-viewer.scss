@@ -1,0 +1,15 @@
+.quickview-wrapper {
+  z-index: 1080;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
+  img {
+    height: auto;
+    width: 40vw;
+  }
+}

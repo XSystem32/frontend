@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "groupName": "Privat",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 2,
+    "groupName": "Erhverv",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 3,
+    "groupName": "Offentlig",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 4,
+    "groupName": "Intern",
+    "parentGroupID":null,
+    "parentOption":null
+  }
+]

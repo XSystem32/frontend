@@ -1,0 +1,321 @@
+[
+  {
+    "id": 1,
+    "groupName": "Privat",
+    "parentGroupID":null,
+    "parentOption":null
+
+  },
+  {
+    "id": 2,
+    "groupName": "Erhverv",
+    "parentGroupID":null,
+    "parentOption":null
+
+  },
+  {
+    "id": 3,
+    "groupName": "Offentlig",
+    "parentGroupID":null,
+    "parentOption":null
+
+  },
+  {
+    "id": 4,
+    "groupName": "Intern",
+    "parentGroupID":null,
+    "parentOption":null
+
+  },
+  {
+    "id": 5,
+    "groupName": "Server",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 6,
+    "groupName": "Ordning",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 7,
+    "groupName": "aer_privat",
+    "parentGroupID": 1,
+    "parentOption":6
+  },
+  {
+    "id": 8,
+    "groupName": "aes_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 9,
+    "groupName": "atp_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 10,
+    "groupName": "aub_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 11,
+    "groupName": "bus_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 12,
+    "groupName": "fp_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 13,
+    "groupName": "iss_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 14,
+    "groupName": "lg_privat",
+    "parentGroupID":1,
+    "parentOption":6
+
+  },
+  {
+    "id": 15,
+    "groupName": "sfs_privat",
+    "parentGroupID":1,
+    "parentOption":6
+  },
+  {
+    "id": 16,
+    "groupName": "supp_privat",
+    "parentGroupID":1,
+    "parentOption":6
+  },
+  {
+    "id": 17,
+    "groupName": "udk_privat",
+    "parentGroupID":1,
+    "parentOption":6
+  },
+  {
+    "id": 18,
+    "groupName": "fri",
+    "parentGroupID":1,
+    "parentOption":6
+  },
+
+  {
+    "id": 19,
+    "groupName": "liberty_frontend",
+    "parentGroupID":1,
+    "parentOption":5
+  },
+  {
+    "id": 20,
+    "groupName": "liberty_login",
+    "parentGroupID":1,
+    "parentOption":5
+  },
+
+
+  {
+    "id": 21,
+    "groupName": "aer_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 22,
+    "groupName": "aes_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "any_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "barseldk_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "dfo_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "atp_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "easy_admin_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "easy_anmelder_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "easy_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "easy_forsikring_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "eps_anmelder_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "ess_anmelder_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "fib_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "fk_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "fp_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "iss_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "lba_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "lfm_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "lg_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "sambet_erhverv",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "fri",
+    "parentGroupID":2,
+    "parentOption":6
+  },
+
+  {
+    "id": 21,
+    "groupName": "liberty_frontend",
+    "parentGroupID":2,
+    "parentOption":5
+  },
+  {
+    "id": 21,
+    "groupName": "liberty_login",
+    "parentGroupID":2,
+    "parentOption":5
+  },
+  {
+    "id": 21,
+    "groupName": "liberty_s3",
+    "parentGroupID":2,
+    "parentOption":5
+  },
+
+
+  {
+    "id": 21,
+    "groupName": "atp_myndighed",
+    "parentGroupID":3,
+    "parentOption":6
+  },
+  {
+    "id": 21,
+    "groupName": "liberty_frontend",
+    "parentGroupID":3,
+    "parentOption":5
+  },
+  {
+    "id": 21,
+    "groupName": "liberty_login",
+    "parentGroupID":3,
+    "parentOption":5
+  },
+
+  {
+    "id": 21,
+    "groupName": "atpmedarbejder",
+    "parentGroupID":4,
+    "parentOption":6
+  },
+
+  {
+    "id": 21,
+    "groupName": "liberty_krp",
+    "parentGroupID":4,
+    "parentOption":5
+  },
+  {
+    "id": 21,
+    "groupName": "portal",
+    "parentGroupID":4,
+    "parentOption":5
+  }
+]

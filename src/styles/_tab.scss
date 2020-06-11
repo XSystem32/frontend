@@ -1,0 +1,35 @@
+.mat-ink-bar {
+  height: 4px !important;
+}
+
+.mat-tab-label {
+  font-size: 15px;
+}
+
+.mat-tab-list {
+  margin-left: 8px;
+}
+.mat-tab-header {
+  background-color: $color-to-view-body-level-1;
+  background: $color-to-view-body-level-1;
+}
+
+.mat-tab-label, .mat-tab-link {
+  color: #333;
+}
+
+.mat-tab-label {
+  opacity: 1 !important;
+}
+
+//.custom-tabs .mat-tab-body-content{
+//  overflow-x: hidden;
+//}
+
+//::ng-deep .mat-tab-body-content {
+//  overflow-x: hidden !important;
+//}
+
+.mat-tab-body-content{
+  overflow-x: hidden !important;
+}

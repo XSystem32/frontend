@@ -1,0 +1,32 @@
+[
+  {
+    "id": 5,
+    "groupName": "Server",
+    "parentGroupID":null,
+    "parentOption":null
+  },
+  {
+    "id": 19,
+    "groupName": "liberty_frontend",
+    "parentGroupID":1,
+    "parentOption":5
+  },
+  {
+    "id": 20,
+    "groupName": "liberty_login",
+    "parentGroupID":1,
+    "parentOption":5
+  },
+  {
+    "id": 44,
+    "groupName": "liberty_login",
+    "parentGroupID":2,
+    "parentOption":5
+  },
+  {
+    "id": 45,
+    "groupName": "liberty_s3",
+    "parentGroupID":2,
+    "parentOption":5
+  }
+]

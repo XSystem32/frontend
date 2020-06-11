@@ -1,0 +1,17 @@
+<header class="header" role="banner">
+  <nav Class="navbar navbar-expand-lg navbar-dark" role="navigation">
+      <div class="row">
+        <div class="col-12 col-md-10">
+          <ul class="navbar-nav">
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link waves-light" href="#" routerLink="formular" [class.active]="true">Junctions</a>
+              <a class="nav-link waves-light" href="#" routerLink="test" [class.active]="true">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

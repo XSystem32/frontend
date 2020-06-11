@@ -1,0 +1,132 @@
+/**
+   *
+   * Method til at finde ikonet der skal vises for dokumentet.
+   *  Hvis dokument er P5.980 vises dummy ikon ownOmjournalisering50
+   *  Hvis kanal-valg er DBOKS (05), EBOKS (02) eller DIGITALKVITTERING (09), vises Borger/virk ikon (brevDigitalisering)
+   *  Hvis kanal-valg er EMAIL (03), ATP_DK (06), EG BLANKET (12), EG KONTRAKT (13), vises E-mail ikonet (digitalBesked)
+   *  Hvis kanal-valg er SMS (10), vises SMS ikon (NemSMS)
+   *  Hvis kanal-valg er E_ANMELDELSE (07), vises capevo ikonet
+   *  Hvis dokumenttypeId er UPLOAD_DOK_TYPE_ID (P3.800), vises upload klips ikon (vedhaeftedeFilet)
+   *  Har Notifikationstype en vaerdi, vises NOTIF ikonet (Notifikation)
+   *  Hvis dokumenttypeId er SAGSNOTE_DOK_TYPE_ID (BO.900) eller INTERNNOTE_DOK_TYPE_ID (BO.991), vises INTERN_SAGSNOTE ikonet (interneSagsnoter)
+   *  Ellers vises brev ikonet, (Brev)
+   *  I de fleste tilfaelle bruges retningen ogsaa til at vaelge ikon. Er retning ikke udflydt vises default ikon for den enkle type ikon.
+   *
+   * @param dok
+   * @return iconet, som hoere til dokumentet
+   */
+
+.hide-base-svg {
+  display: none;
+}
+
+
+.chip-luk-ikon {
+  display: inline-block;
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.dokument-ikon {
+  svg {
+    width: 44px;
+    height: 40px;
+  }
+  &.small {
+    svg {
+      width: 28px;
+      height: 26px;
+    }
+  }
+}
+
+//Nedenstående ikoner er defineret i KRPCommons - de bliver brugt på sags-og dokumentoversigt
+.Capevo {
+
+}
+
+.Emergency {
+
+}
+
+.IndBrev {
+
+}
+
+.UdBrev {
+
+}
+
+.IndbrevDigitalpost {
+
+}
+
+.UdbrevDigitalpost {
+
+}
+
+.IndDigitalBesked {
+
+}
+
+.UdDigitalBesked {
+
+}
+
+.IndEmail {
+
+}
+
+.UdEmail {
+
+}
+
+.InterneSagsnoter {
+
+}
+
+.Nemsms {
+
+}
+
+.Notifikation {
+
+}
+
+.Omjournalisering {
+
+}
+
+.VedhaeftedeFiler {
+
+}
+
+.IndKontaktformular{
+
+}
+
+.UdKontaktformular{
+
+}
+
+.DefaultIkon {
+}
+
+//nedenstående bliver brugt til at vise Email-status om adressen er sikker eller ej.
+.green-icon {
+  color: green;
+}
+
+.yellow-icon {
+  color: orange;
+}
+
+.red-icon {
+  color: red;
+}
+
+.grey-icon {
+  color: grey;
+}

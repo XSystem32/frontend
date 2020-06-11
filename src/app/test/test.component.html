@@ -1,0 +1,28 @@
+
+<div class="test-form">
+  <h2>Create </h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="testForm">
+        <div class="form-group">
+          <select formControlName="host" class="form-control" (change)="onChangeHost($event.target.value)">
+            <option value="">Select host...</option>
+            <option *ngFor="let host of hosts" [value]="host.id">{{host}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select formControlName="ordning" class="form-control" (change)="onChangeOrdning($event.target.value)">
+            <option value="">Select ordning...</option>
+            <option *ngFor="let ordning of ordnings" [value]="ordning.id">{{ordning.name}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select formControlName="server" class="form-control">
+            <option value="">Select server...</option>
+            <option *ngFor="let server of servers" [value]="server.id">{{server.name}}</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
